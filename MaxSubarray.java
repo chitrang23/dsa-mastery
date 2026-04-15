@@ -3,7 +3,7 @@ public class MaxSubarray {
         int maxSum = Integer.MIN_VALUE; 
         int currentSum = 0;
         
-        for (int i = 0; i < nums.length; i++) { // Fixed 'ii' to 'i'
+        for (int i = 0; i < nums.length; i++) { 
             currentSum = nums[i] + currentSum;
             
             if (currentSum > maxSum) {
